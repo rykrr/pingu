@@ -1,0 +1,10 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Exec=/usr/local/bin/pingu_server
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target
