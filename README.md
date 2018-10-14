@@ -1,3 +1,17 @@
-# Pingu
+# Pingu (Temporary Name)
+Simple UDP ping utility
 
-Simple Ping Utility
+## Compilation
+```
+make compile
+```
+
+## Installation
+```
+sudo make install
+```
+
+## Uninstall
+```
+sudo make uninstall
+```
