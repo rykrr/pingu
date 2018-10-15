@@ -88,13 +88,15 @@ int main() {
         return 0;
     }
     
-    printf("%-20s %s\n", "Host", "Address");
+    printf("\n%-20s %s\n", "Host", "Address");
     printf("-----------------------------------\n");
     
     signal(SIGKILL, stop);
     signal(SIGINT, stop);
     
     while(!_signal && !loop(sock));
+    
+    puts("");
     
     if(sock)
         close(sock);
