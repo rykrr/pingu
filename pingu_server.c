@@ -56,7 +56,7 @@ int loop(int sock, const char *host) {
     
     read = recvfrom(sock, buf, 255, 0, (struct sockaddr*) &sender, &sender_size);
     
-    if(read && !_signal) {
+    if(read > 0 && !_signal) {
         buf[read] = 0;
         
         if(buf[0] == '-' && buf[1] == '-')
